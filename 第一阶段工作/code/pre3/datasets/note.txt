@@ -1,0 +1,19 @@
+以下三个阈值均使用
+speedThreshold = 3
+rmsThreshold = 1.2
+x_zThreshold = 0.25
+
+anomaly percent 取 0.5。 大于0小于0.5的去除
+
+dataX, dataY, dataZ每行各含64个样本点
+dataLabel 第一列为type，第二列为severity， 第三列为roadType
+其中type：
+    'normal': 0,
+    'hole': 1
+    'transverse': 2,
+    
+severity：为0-5
+
+roadType描述该窗口从哪类road提取出来的
+poor：1
+bad: 2
